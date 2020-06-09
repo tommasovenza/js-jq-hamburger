@@ -6,15 +6,15 @@
 
 
 // il click fa apparire il menu nascosto e...
-$('.fa-bars').click(function () {
+$('.header-right a').click(function () {
 
-    $('.hamburger-menu').show();
+    $('.hamburger-menu').addClass('active');
 
 });
 
 // ...fa sparire il menu
-$('.fa-times').click(function () {
+$('.hamburger-menu > a').click(function () {
 
-    $('.hamburger-menu').hide();
+    $('.hamburger-menu').removeClass('active');
 
 });
